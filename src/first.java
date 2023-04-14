@@ -1,4 +1,4 @@
-public class Main {
+public class first {
     public static void main(String[] args) {
         System.out.println(" 1、D \n 2、B \n 3、D \n 4、B \n 5、B ") ;
         showTriangle(4);
