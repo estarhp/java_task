@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e373a25-059a-4169-8524-1f568a2148f4" name="变更" comment="第二周">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/第三作业/第一题/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/第三作业/第三题/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/第三作业/第二题/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/第三作业/第五题/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/第三作业/第四题/main.java" afterDir="false" />
+    <list default="true" id="6e373a25-059a-4169-8524-1f568a2148f4" name="变更" comment="第三周">
+      <change afterPath="$PROJECT_DIR$/src/基础考核/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +146,8 @@
       <workItem from="1682641294985" duration="8091000" />
       <workItem from="1682661625303" duration="1339000" />
       <workItem from="1683786300461" duration="290000" />
-      <workItem from="1683875245784" duration="7836000" />
+      <workItem from="1683875245784" duration="9261000" />
+      <workItem from="1683960366747" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1681460567604</created>
@@ -177,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682661489467</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="第三周">
+      <created>1683887510716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683887510716</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +198,7 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="第一周" />
     <MESSAGE value="第二周" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二周" />
+    <MESSAGE value="第三周" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三周" />
   </component>
 </project>
