@@ -59,6 +59,19 @@ public class StudentManagementSystem {
                     ", GPA: " + student.getGpa());
         }
     }
+    public void queryStudentsByID(){
+        System.out.println("请输入查询的ID");
+        int inputID = Integer.parseInt(scanner.nextLine());
+        for (Student student :students) {
+            if (inputID == student.getId())
+            {
+                System.out.println("Name:"+student.getName()+"  CPA:"+student.getGpa());
+                return;
+            }
+        }
+
+        System.out.println("查无此人哦！！");
+    }
 
     public static void main(String[] args) {
         StudentManagementSystem system = new StudentManagementSystem();
@@ -67,7 +80,8 @@ public class StudentManagementSystem {
         while (running) {
             System.out.println("Enter 1 to add a student");
             System.out.println("Enter 2 to view all students");
-            System.out.println("Enter 3 to exit");
+            System.out.println("Enter 3 to query student");
+            System.out.println("Enter 4 to exit");
 
             int selection = Integer.parseInt(system.scanner.nextLine());
 
@@ -79,6 +93,9 @@ public class StudentManagementSystem {
                     system.viewStudents();
                     break;
                 case 3:
+                    system.queryStudentsByID();
+                    break;
+                case 4:
                     running = false;
                     break;
                 default:
