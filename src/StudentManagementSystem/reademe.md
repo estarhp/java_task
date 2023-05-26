@@ -8,5 +8,7 @@
 
 在system类上加了addstudent，viewstudent,querystudent 等方法
 
-比较简单，主打的就是一个基本结构
+比较简单，主打的就是一个基本结构、
+
+
 
