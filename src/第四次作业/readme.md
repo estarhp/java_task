@@ -1,31 +1,31 @@
-```sql
+```mysql
 create database cqupt;
 use cqupt;
 create table if not exists "cqupt_student" (
 "student_id" varchar(10) not null,
 "name" varchar(20) not null,
 "sex" varchar(2) not null,
-"age" interger ,
-"Fee" decimal(10,2)
+"age" integer ,
+"Fee" decimal(10,2),
 "address" varchar(50),
 "memo" varchar(300),
 primary key ("student_id")
-)engin=InnoDB default charset = utf-8;
+);
 
 create table  if not exists "CourseAa" (
 "Aa1" varchar(30) not null,
 "Aa2" integer not null,
 "Aa3" decimal(10)
-)engine = InnoDB default charset = utf-8;
+);
 
-create table if not exists "ChooseBb" (
-"Bb1" varchar(30) not null;
-"Bb2" integer ;
-"Bb3" decimal(6);
-)
+create table if not exists ChooseBb (
+"Bb1" varchar(30) not null,
+"Bb2" integer,
+"Bb3" decimal(6)
+);
 
-alert table ChooseBb add Bb4 varchar(20) not null default "系统测试值";
-alert table ChooseBb add Bb5 varchar(10) not null default pk_ChooseBb,add constraint pk_ChooseBb primary key (Bb5) ;
+ALTER table ChooseBb add Bb4 varchar(20) not null default "系统测试值";
+ALTER table ChooseBb add Bb5 varchar(10) not null default pk_ChooseBb,add constraint pk_ChooseBb primary key (Bb5) ;
 
 
 
@@ -37,14 +37,14 @@ drop view View_Choosebb;
 create index Index_bb2 on ChooseBb(Bb2 asc);
 create index Index_bb4  on ChooseBb(Bb4 desc);
 
-drop index Index_bb2;
+drop index Index_bb2 on ChooseBb;
 
 create table if not exists "test" (
 "Name" varchar(20),
 "Age" Integer,
 "Score" numeric(10,2),
 "Address" varchar(60)
-)engine = InnoDB default charset = utf-8;
+);
 
 insert into test (Name,Age,Score,Address) values
 ("找一",20,580.00,"chogyou 125"),
