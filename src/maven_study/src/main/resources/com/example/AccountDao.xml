@@ -1,0 +1,32 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.dao.AccountDao">
+
+    <!-- 定义查询所有账户的 SQL 语句 -->
+    <select id="findAll" resultType="com.example.model.Account">
+        SELECT * FROM account
+    </select>
+
+    <!-- 定义根据 ID 查询账户的 SQL 语句 -->
+    <select id="selectByPrimaryKey" parameterType="string" resultType="com.example.model.Account">
+        SELECT * FROM account WHERE id = #{id}
+    </select>
+
+    <!-- 定义插入账户的 SQL 语句 -->
+    <insert id="insertAccount" parameterType="com.example.model.Account">
+        INSERT INTO account (id, name,money,createtime) VALUES (#{id}, #{name}, #{money}, #{createTime})
+    </insert>
+
+    <!-- 定义更新账户信息的 SQL 语句 -->
+    <update id="updateByPrimaryKey" parameterType="com.example.model.Account">
+        UPDATE account SET name = #{name}, money = #{money} , updatetime = #{updateTime} WHERE id = #{id}
+    </update>
+
+    <!-- 定义删除账户的 SQL 语句 -->
+    <delete id="deleteByPrimaryKey" parameterType="String">
+        DELETE FROM account WHERE id = #{id}
+    </delete>
+
+</mapper>
